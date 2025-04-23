@@ -3,6 +3,7 @@
   "name": "CanvasCalFix",
   "version": "1.0",
   "description": "Keeps your chosen Canvas calendar courses always enabled – even across multiple institutions.",
+  "icons": { "128": "icon128.png" },
 
   "permissions": ["storage", "tabs", "scripting", "activeTab"],
   "host_permissions": ["*://*/*"],
