@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CanvasCalFix</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>CanvasCalFix</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Canvas URLs</h2>
+        <form id="addUrlForm">
+          <input
+            id="canvasUrl"
+            type="url"
+            placeholder="https://example.instructure.com"
+            required
+          />
+          <button type="submit">Add URL</button>
+        </form>
+        <ul id="urlList"></ul>
+      </section>
+
+      <section id="courseManager" hidden>
+        <h2>Select courses to keep visible</h2>
+        <ul id="courseList"></ul>
+        <div class="button-container">
+          <button id="saveCourses">Save Selection</button>
+        </div>
+      </section>
+
+      <p id="hint">Navigate to a Canvas calendar page to select courses.</p>
+
+      <div class="footer">Created by GooglyBlox</div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  background: #1e1e1e;
+  padding: 16px 20px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 24px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #333;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input[type="url"] {
+  flex: 1;
+  padding: 10px 12px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+input[type="url"]:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  background: #3f51b5;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: #3646a0;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+#urlList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #2a2a2a;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.delete-btn {
+  margin-left: auto;
+  background: #e53935;
+  font-size: 13px;
+  padding: 6px 12px;
+  min-width: 70px;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+}
+
+#courseList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background: #2a2a2a;
+  border-radius: 6px;
+}
+
+#courseList li:hover {
+  background: #333;
+}
+
+#courseList li input {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  accent-color: #3f51b5;
+}
+
+#courseList li label {
+  cursor: pointer;
+  font-size: 14px;
+  flex: 1;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+#saveCourses {
+  background: #4caf50;
+  font-weight: 600;
+}
+
+#saveCourses:hover {
+  background: #3d9140;
+}
+
+#hint {
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  padding: 16px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #2d2d2d;
+  border: 1px solid #555;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+input[type="checkbox"]:checked {
+  background: #3f51b5;
+  border-color: #3f51b5;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 16px 0;
+  border-top: 1px solid #333;
+  margin-top: 16px;
+}
+
+#urlList:empty::after {
+  content: "No Canvas URLs added yet";
+  display: block;
+  text-align: center;
+  color: #888;
+  padding: 14px;
+  font-size: 14px;
+}

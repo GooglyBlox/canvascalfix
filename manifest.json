@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "CanvasCalFix",
+  "version": "1.0",
+  "description": "Keeps your chosen Canvas calendar courses always enabled – even across multiple institutions.",
+
+  "permissions": ["storage", "tabs", "scripting", "activeTab"],
+  "host_permissions": ["*://*/*"],
+
+  "action": { "default_popup": "popup.html" },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/calendar*", "*://*/*/calendar*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "background": { "service_worker": "background.js" }
+}
